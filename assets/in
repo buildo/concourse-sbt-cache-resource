@@ -17,7 +17,7 @@ cat "${payload}" | /opt/resource/git/in "$GIT_DEST_DIR" >&3
 
 cd "${GIT_DEST_DIR}/${project_root}"
 
-[[ -f build.sbt ]] || { echo "There is no build.sbt in the project root" >&2; exit 1; }
+# [[ -f build.sbt ]] || { echo "There is no build.sbt in the project root" >&2; exit 1; }
 
 echo "Running 'sbt update'"
 sbt update
